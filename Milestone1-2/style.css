@@ -1,0 +1,130 @@
+/* By Default Style.css Code. */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+body {
+width: 100%;
+/* height: 100vh; */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: #2558a2;
+background: linear-gradient(rgba(41,168,218,0.63), rgba(32,141,214,0.562));
+padding: 2%;
+}
+.resumeDiv {
+  /* Corner Gaps. */
+width: 70%;
+/* padding: 1%; */
+border: 5px solid black;
+}
+header {
+width: 100%;
+height: 160px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 40px;
+/* background: linear-gradient(rgba(41,168,218,0.63), rgba(32,141,214,0.562)); */
+background-color: #2558a2;
+margin-bottom: 30px;
+}
+header img {
+width: 150px;
+height: 150px;
+border-radius: 50%;
+}
+.white{
+  color: white;
+}
+.Content{
+    width: 100px;
+    display: flex;
+}
+.content{
+  display: flex;
+  color: white;
+}
+.content aside{
+    width: 30%;
+    /* background-color: #000; */
+    /* text-Color */
+    color: white;
+    padding-left: 50px;
+    /* bottom gap */
+    padding-bottom: 40px;
+}
+.contact h2,
+.education h2,
+.skill h2,
+.language h2,
+.experience h2,
+.refrence h2{
+  border-bottom: 2px solid whitesmoke;
+  /* Contact aur Name mei gap. */
+  margin-bottom: 20px;
+  padding-bottom: 3px;
+  /* color: #00BFFF; */
+  color: white;
+}
+.contact,
+.education,
+.skill,
+.language{
+  /* Adress and education gap */
+  margin-bottom: 30px;
+}
+.education{
+  line-height: 22px;
+}
+.skill ul,
+.language ul,
+.experience-items ul{
+  margin-left: 16px;
+}
+.main-content{
+  margin-left: 50px;
+  width: 70%;
+}
+@media (max-width:755px ){
+  .content{
+    flex-direction: column;
+  }
+  aside, main, .main-content {
+    width: 100%;
+  }
+}
+
+.refrence h2{
+  margin-top: 12px;
+}
+.btnDiv{
+  width: 70%;
+  padding: 2%;
+  display: flex;
+  margin-top: 20px;
+}
+.btn{
+  font-size: 20px;
+  font-weight: 595  ;
+  padding: 10px 16px;
+  border-radius: 90px;
+  color: white;
+  background: #00BFFF;
+  cursor: pointer;
+  
+  &:hover{
+    background: #007B9E;
+  }
+  &:active{
+    transform: scale(0.9);
+  }
+
+}
+.hide{
+  display: none;
+}
